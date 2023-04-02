@@ -1,0 +1,150 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    background-color: black;
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+}
+
+#board{
+    background: linear-gradient(rgba(203, 237, 243, 0.096),rgb(241, 241, 196));
+    width: 90vmin;
+    height:92vmin;
+    border: 2px solid rgb(61, 41, 41);
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+    margin: 1rem;
+    top: 12rem;
+}
+#scoreBox{
+    position: relative;
+    font-weight: bold;
+    /* margin: 0rem  2rem; */
+    top: 0;
+    /* right:200x; */
+    font-size: 39px;
+    color: white;
+}
+.head{
+   background: linear-gradient(red,yellow);
+   border-end-end-radius: 2px;
+   transform: scale(1.2);
+}
+.food{
+    background-color: rgb(252, 4, 4);
+    border-radius: 15px;
+    border: double;
+}
+.snake{
+    background-color:rgb(53, 11, 11);
+    border-radius: 15px;
+
+}
+#highScore{
+    position: relative;
+    font-weight: bold;
+    /* margin: 0rem  2rem; */
+    top: 0;
+    /* right:200x; */
+    font-size: 39px;
+    color: white;
+}
+/* Style the button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Style the dropdown content */
+  .dropdown-content {
+    background-color: rgb(24, 150, 87);
+    color: black;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    border-radius: 1.5rem;
+    text-align: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  /* Style the links inside the dropdown */
+  .dropdown-content input {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Style the dropdown on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Style the selected dropdown option */
+  .dropdown-content input:hover {
+    background-color: #f1f1f1;
+  }
+  
+.front_page
+    {
+        background-image: url(/image/snake-game-landscape-jo62cmzftq0wei66.jpg);
+        background-repeat: no-repeat;
+        height:100vh; 
+        width: 100vw;
+        justify-content: center;
+        display: flex;
+        background-size: 100vw 100vh;
+    }
+    .button
+    {
+        background-color: navy;
+        color: black;
+        font-weight: 500;
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 2rem;
+        border: 2px solid black;
+        border-radius: 1rem;
+        padding:1rem;
+        cursor: pointer;
+        text-decoration: none;
+        
+        
+    }
+    .button:hover{
+    background-color: red;
+    background: #27282c;
+    inset: 2px;
+    }
+    
+    .button_container{
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items: center;
+    }
+    .play_button
+    {
+        margin-bottom: 2rem;
+    
+    }
+    .other_button{
+        display: flex;
+        flex-direction: row;
+       
+    }
+    
